@@ -10,6 +10,13 @@ nav {
     margin: 5px 15px 0px 15px;
 }
 
+#homenav {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     text-align: center;
     color: rgb(3, 90, 3);
