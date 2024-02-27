@@ -59,38 +59,115 @@ h1 {
     font-size: larger;
     color: rgb(13, 63, 20);
 }
-.hobby-section{
-    padding:7px 0px 7px 0px;
+
+.hobby-section {
+    padding: 7px 0px 7px 0px;
 }
 
-#art>img {
+#art>div>img {
     width: 400px;
     height: auto;
+    float: right;
+    margin-left: 20px;
 }
-#art>h3{
+
+#collage-container {
+    margin-bottom: 60px;
+}
+
+#art>h3 {
     text-align: center;
     background-color: rgb(151, 99, 99);
     color: rgb(108, 32, 32);
 }
-#art{
+
+#art {
     background-color: rgb(123, 74, 74);
+    min-height: 490px;
+    padding: 0px 20px 20px 20px;
+
 }
 
-#travel>img {
+#collage-span {
+    position: relative;
+    left: 80%;
+    top: 408px;
+    margin-right: 20px;
+    /* padding-left: ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
+}
+
+@media(max-width: 733px) {
+    #collage-span {
+        visibility: hidden;
+    }
+
+    #art>div>img {
+
+        float: none;
+    }
+
+}
+
+@media(max-width: 639px) {
+    #collage-container {
+        margin-bottom: 10px;
+        margin-left: auto;
+    }
+
+    #art {
+        min-width: 400px;
+    }
+
+
+}
+
+#travel>div>img {
     width: 350px;
     height: auto;
+    float: right;
+    position: relative;
+    top: 10px;
+    margin-left: 50px;
 }
-#travel>h3{
+
+#travel>h3 {
     text-align: center;
     background-color: rgb(188, 227, 151);
     color: green;
+    position: relative;
+    bottom: 35px;
 }
-#travel{
-    background-color:rgb(144, 196, 95);
+
+#travel {
+    background-color: rgb(144, 196, 95);
+    min-height: 425px;
+    padding: 0px 20px 20px 20px;
 }
-#synth>h3{
+
+#travel-span {
+    position: relative;
+    left: 70%;
+    top: 300px;
+}
+
+@media(max-width: 704px) {
+    #travel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #travel>div>img {
+        float: none;
+        align-self: center;
+    }
+    #travel-span {
+        visibility: hidden;
+    }
+}
+
+#synth>h3 {
     text-align: center;
-    background-color:  rgb(191, 177, 211);
+    background-color: rgb(191, 177, 211);
     color: purple;
 }
 
@@ -98,7 +175,10 @@ h1 {
 #synth>img {
     width: 300px;
     height: auto;
+    float: left;
+    margin: 20px;
 }
-#synth{
-    background-color: rgb(160, 149, 176);
+
+#synth {
+  
 }
