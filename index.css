@@ -160,17 +160,19 @@ h1 {
         float: none;
         align-self: center;
     }
+
     #travel-span {
         visibility: hidden;
     }
 }
 
-#synth-heading{
+#synth-heading {
     position: relative;
-    bottom:20px;
-    width:90%;
+    bottom: 20px;
+    width: 90%;
     margin-left: 40px;
 }
+
 #synth>h3 {
     text-align: center;
     background-color: rgb(191, 177, 211);
@@ -186,20 +188,24 @@ h1 {
 }
 
 #synth {
-  background-color: rgb(160, 149, 176);
-  min-height:410px;
+    background-color: rgb(160, 149, 176);
+    min-height: 410px;
 }
-#poke-section{
+
+.web-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#pokedex-img{
-    width:85%;
+
+.website-img {
+    width: 85%;
 }
-#poke-section>p{
+
+.web-section>p {
     margin: 40px;
 }
-#poke-section>h2{
-        text-decoration: underline;               
+
+.web-section>h2 {
+    text-decoration: underline;
 }
