@@ -189,3 +189,17 @@ h1 {
   background-color: rgb(160, 149, 176);
   min-height:410px;
 }
+#poke-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pokedex-img{
+    width:85%;
+}
+#poke-section>p{
+    margin: 40px;
+}
+#poke-section>h2{
+        text-decoration: underline;               
+}
