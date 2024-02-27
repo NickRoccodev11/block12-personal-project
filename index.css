@@ -4,8 +4,9 @@ body{
 nav{
     display:flex;
     justify-content: space-around ;
-    background-color: rgb(118, 219, 179);
+    background-color: rgb(104, 200, 150);
     padding: 15px;
+    margin: 5px 15px 0px 15px;
 }
 #home-title{
     text-align: center;
@@ -16,9 +17,22 @@ nav{
 height:200px;
 float: right;
 margin: 8px;
+position: relative;
+bottom: 7px;
 }
-#container{
+#bio-container{
     background-color:rgb(112, 176, 53); 
     padding: 15px;
     border: 2px solid green;
+    margin: 40px;
+    min-height:200px;
+}
+#quote{
+    margin: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(160, 149, 176);
+    padding: 20px;
+    border: 5px solid rgb(154, 66, 154);
+    border-style: groove;
+    box-shadow: 5px 5px 5px rgb(57, 3, 57);
 }
