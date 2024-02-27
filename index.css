@@ -48,5 +48,7 @@ bottom: 7px;
     animation-duration: 5s;
 }
 #hobby-intro{
-    
+    text-align: center;
+    font-size: larger;
+    color: rgb(13, 63, 20);
 }
