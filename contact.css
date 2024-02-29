@@ -1,0 +1,16 @@
+#contactnav {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+#homenav {
+    pointer-events: auto;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(50, 24, 136);
+}

@@ -1,219 +1,274 @@
 body {
-    background-color: rgb(142, 164, 122);
+  background-color: rgb(142, 164, 122);
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(104, 200, 150);
-    padding: 15px;
-    margin: 5px 15px 0px 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(104, 200, 150);
+  padding: 15px;
+  margin: 5px 15px 0px 15px;
+}
+a:hover {
+  transition: box-shadow 0.5s, background-color 0.5s;
+  box-shadow: 0 0 10px 10px rgb(158, 228, 158);
+  background-color: rgb(158, 228, 158);
 }
 
 #homenav {
-    pointer-events: none;
-    cursor: default;
-    text-decoration: none;
-    color: black;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
-    text-align: center;
-    color: rgb(3, 90, 3);
-    text-shadow: 2px 2px 2px rgb(166, 255, 0);
+  text-align: center;
+  color: rgb(3, 90, 3);
+  text-shadow: 2px 2px 2px rgb(166, 255, 0);
 }
 
 #nick {
-    height: 200px;
-    float: right;
-    margin: 8px;
-    position: relative;
-    bottom: 7px;
+  height: 200px;
+  float: right;
+  margin: 8px;
+  position: relative;
+  bottom: 7px;
 }
 
 #bio-container {
-    background-color: rgb(140, 184, 99);
-    padding: 15px;
-    border: 2px solid green;
-    margin: 40px;
-    min-height: 200px;
+  background-color: rgb(140, 184, 99);
+  padding: 15px;
+  border: 2px solid green;
+  margin: 40px;
+  min-height: 200px;
+}
+#bio-container > p {
+  font-size: 1pc;
 }
 
 @keyframes quote-fade {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 #quote {
-    margin: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(160, 149, 176);
-    padding: 20px;
-    border: 5px solid rgb(154, 66, 154);
-    border-style: groove;
-    box-shadow: 5px 5px 5px rgb(57, 3, 57);
-    animation-name: quote-fade;
-    animation-duration: 5s;
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(160, 149, 176);
+  padding: 20px;
+  border: 5px solid rgb(154, 66, 154);
+  border-style: groove;
+  box-shadow: 5px 5px 5px rgb(57, 3, 57);
+  animation-name: quote-fade;
+  animation-duration: 5s;
 }
 
-#hobby-intro {
-    text-align: center;
-    font-size: larger;
-    color: rgb(13, 63, 20);
+.page-intro {
+  text-align: center;
+  font-size: larger;
+  color: rgb(13, 63, 20);
+  margin: 0px 20px 0px 20px;
 }
 
 .hobby-section {
-    padding: 7px 0px 7px 0px;
+  padding: 7px 0px 7px 0px;
+}
+.about-paragraph {
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.1rem;
 }
 
-#art>div>img {
-    width: 400px;
-    height: auto;
-    float: right;
-    margin-left: 20px;
+#art > div > img {
+  width: 400px;
+  height: auto;
+  float: right;
+  margin-left: 20px;
 }
 
 #collage-container {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
-#art>h3 {
-    text-align: center;
-    background-color: rgb(151, 99, 99);
-    color: rgb(108, 32, 32);
+#art > h3 {
+  text-align: center;
+  background-color: rgb(151, 99, 99);
+  color: rgb(108, 32, 32);
 }
 
 #art {
-    background-color: rgb(123, 74, 74);
-    min-height: 490px;
-    padding: 0px 20px 20px 20px;
-
+  background-color: rgb(123, 74, 74);
+  min-height: 490px;
+  padding: 0px 20px 20px 20px;
 }
 
 #collage-span {
-    position: relative;
-    left: 80%;
-    top: 408px;
-    margin-right: 20px;
-    /* padding-left: ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
+  position: relative;
+  left: 80%;
+  top: 408px;
+  margin-right: 20px;
+  /* padding-left: ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
 }
 
-@media(max-width: 733px) {
-    #collage-span {
-        visibility: hidden;
-    }
+@media (max-width: 733px) {
+  #collage-span {
+    visibility: hidden;
+  }
 
-    #art>div>img {
+  #art > div > img {
+    float: none;
+  }
 
-        float: none;
-    }
-
+  #collage-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-left: 97px;
+  }
 }
 
-@media(max-width: 639px) {
-    #collage-container {
-        margin-bottom: 10px;
-        margin-left: auto;
-    }
-
-    #art {
-        min-width: 400px;
-    }
-
-
-}
-
-#travel>div>img {
-    width: 350px;
-    height: auto;
-    float: right;
-    position: relative;
-    top: 10px;
+@media (max-width: 639px) {
+  #collage-container {
+    margin-bottom: 10px;
     margin-left: 50px;
+  }
+
+  #art {
+    min-width: 400px;
+  }
 }
 
-#travel>h3 {
-    text-align: center;
-    background-color: rgb(188, 227, 151);
-    color: green;
-    position: relative;
-    bottom: 35px;
+#travel > div > img {
+  width: 350px;
+  height: auto;
+  float: right;
+  position: relative;
+  top: 10px;
+  margin-left: 50px;
+}
+
+#travel > h3 {
+  text-align: center;
+  background-color: rgb(188, 227, 151);
+  color: green;
+  position: relative;
+  bottom: 35px;
 }
 
 #travel {
-    background-color: rgb(144, 196, 95);
-    min-height: 445px;
-    padding: 0px 20px 20px 20px;
+  background-color: rgb(144, 196, 95);
+  min-height: 400px;
+  padding: 0px 20px 20px 20px;
 }
 
 #travel-span {
-    position: relative;
-    left: 70%;
-    top: 300px;
+  position: relative;
+  left: 70%;
+  top: 300px;
 }
 
-@media(max-width: 704px) {
-    #travel {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 760px) {
+  #travel {
+    display: flex;
+    flex-direction: column;
+  }
 
-    #travel>div>img {
-        float: none;
-        align-self: center;
-    }
+  #travel > div > img {
+    float: none;
+    align-self: center;
+    margin-left: 24vw;
+  }
 
-    #travel-span {
-        visibility: hidden;
-    }
+  #travel-span {
+    visibility: hidden;
+  }
 }
 
+@media (max-width: 760px) {
+  #travel {
+    display: flex;
+    flex-direction: column;
+  }
+  #travel > div > img {
+    float: none;
+    align-self: center;
+    margin-left: 10vw;
+  }
+}
 #synth-heading {
-    position: relative;
-    bottom: 20px;
-    width: 90%;
-    margin-left: 40px;
+  position: relative;
+  bottom: 20px;
+  width: 90%;
+  margin-left: 40px;
 }
 
-#synth>h3 {
-    text-align: center;
-    background-color: rgb(191, 177, 211);
-    color: purple;
+#synth > h3 {
+  text-align: center;
+  background-color: rgb(191, 177, 211);
+  color: purple;
 }
 
-
-#synth>img {
-    width: 300px;
-    height: auto;
-    float: left;
-    margin: 20px;
+#synth > img {
+  width: 300px;
+  height: auto;
+  float: left;
+  margin: 20px;
 }
 
 #synth {
-    background-color: rgb(160, 149, 176);
-    min-height: 410px;
+  background-color: rgb(160, 149, 176);
+  min-height: 410px;
 }
 
 .web-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .website-img {
-    width: 85%;
+  width: 85%;
 }
 
-.web-section>p {
-    margin: 40px;
+.web-section > p {
+  margin: 40px;
+  font-size: 1.3rem;
 }
 
-.web-section>h2 {
-    text-decoration: underline;
-    color: rgb(2, 91, 2)
+.web-section > h2 {
+  text-decoration: underline;
+  color: rgb(2, 91, 2);
+}
+
+#success-return {
+  text-align: center;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  margin: 40px 20vw 12px 20vw;
+}
+#contact-form > input {
+  margin-bottom: 20px;
+  background-color: rgb(188, 227, 151);
+}
+#contact-form > button {
+  width: 10vw;
+  margin: auto;
+  background-color: rgb(163, 236, 95);
+  padding: 8px;
+  box-shadow: 5px 5px 5px;
+}
+#contact-form > label {
+  color: rgb(4, 92, 4);
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
