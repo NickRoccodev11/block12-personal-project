@@ -9,6 +9,19 @@ nav {
   padding: 15px;
   margin: 5px 15px 0px 15px;
 }
+@media (max-width: 333px) {
+  nav {
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  #bio-container {
+    margin: 0 auto;
+  }
+}
+
 a:hover {
   transition: box-shadow 0.5s, background-color 0.5s;
   box-shadow: 0 0 10px 10px rgb(158, 228, 158);
@@ -42,6 +55,7 @@ h1 {
   border: 2px solid green;
   margin: 40px;
   min-height: 200px;
+  min-width: 266px;
 }
 #bio-container > p {
   font-size: 1pc;
@@ -89,7 +103,7 @@ h1 {
 }
 
 #art > div > img {
-  width: 400px;
+  width:400px;
   height: auto;
   float: right;
   margin-left: 20px;
@@ -116,16 +130,17 @@ h1 {
   left: 80%;
   top: 408px;
   margin-right: 20px;
-  /* padding-left: ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
+  padding: 0px;
 }
 
 @media (max-width: 733px) {
   #collage-span {
-    visibility: hidden;
+    display: none;
   }
 
   #art > div > img {
     float: none;
+    width: 75%;
   }
 
   #collage-container {
@@ -133,6 +148,9 @@ h1 {
     justify-content: center;
     margin-bottom: 5px;
     margin-left: 97px;
+  }
+  #art > p {
+    margin-left: 20px;
   }
 }
 
@@ -143,7 +161,13 @@ h1 {
   }
 
   #art {
-    min-width: 400px;
+    width: 90%;
+  }
+  #art > p {
+    padding-left: 20px;
+  }
+  #collage-span {
+    display: none;
   }
 }
 
@@ -189,7 +213,7 @@ h1 {
   }
 
   #travel-span {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -197,7 +221,6 @@ h1 {
   #travel {
     display: flex;
     flex-direction: column;
-    min-width: 400px;
   }
   #travel > div > img {
     float: none;
@@ -228,7 +251,6 @@ h1 {
 #synth {
   background-color: rgb(160, 149, 176);
   min-height: 410px;
-  min-width: 400px;
 }
 
 .web-section {
@@ -266,7 +288,7 @@ h1 {
   background-color: rgb(188, 227, 151);
 }
 #contact-form > button {
-  width: 10vw;
+  width: 14vw;
   margin: auto;
   background-color: rgb(163, 236, 95);
   padding: 8px;
