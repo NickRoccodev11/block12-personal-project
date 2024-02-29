@@ -103,7 +103,7 @@ h1 {
 }
 
 #art > div > img {
-  width:400px;
+  width: 400px;
   height: auto;
   float: right;
   margin-left: 20px;
@@ -149,6 +149,10 @@ h1 {
     margin-bottom: 5px;
     margin-left: 97px;
   }
+  #collage-container > img {
+    position: relative;
+    right: 40px;
+  }
   #art > p {
     margin-left: 20px;
   }
@@ -157,9 +161,12 @@ h1 {
 @media (max-width: 639px) {
   #collage-container {
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 40px;
   }
-
+  #collage-container > img {
+    position: relative;
+    right: 20px;
+  }
   #art {
     width: 90%;
   }
@@ -210,6 +217,7 @@ h1 {
     float: none;
     align-self: center;
     margin-left: 24vw;
+    width: 75%;
   }
 
   #travel-span {
@@ -225,6 +233,7 @@ h1 {
   #travel > div > img {
     float: none;
     align-self: center;
+    width: 75%;
     margin-left: 10vw;
   }
 }
