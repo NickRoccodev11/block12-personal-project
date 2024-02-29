@@ -84,6 +84,9 @@ h1 {
   text-align: justify;
   font-size: 1.1rem;
 }
+#synth > p {
+  padding-right: 30px;
+}
 
 #art > div > img {
   width: 400px;
@@ -194,6 +197,7 @@ h1 {
   #travel {
     display: flex;
     flex-direction: column;
+    min-width: 400px;
   }
   #travel > div > img {
     float: none;
@@ -224,6 +228,7 @@ h1 {
 #synth {
   background-color: rgb(160, 149, 176);
   min-height: 410px;
+  min-width: 400px;
 }
 
 .web-section {
