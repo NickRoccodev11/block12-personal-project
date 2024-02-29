@@ -318,6 +318,6 @@ input:hover {
   box-shadow: 10px 10px 10px;
 }
 
-input:focus{
+input:focus {
   background-color: rgb(208, 237, 181);
 }

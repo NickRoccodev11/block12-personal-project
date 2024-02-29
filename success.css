@@ -33,9 +33,9 @@ body {
   width: 25%;
   height: auto;
   align-self: center;
-  border-radius: 50%
+  border-radius: 50%;
 }
-#return-home>a{
-    align-self: center;
-    margin-bottom: 5vw;
+#return-home > a {
+  align-self: center;
+  margin-bottom: 5vw;
 }
