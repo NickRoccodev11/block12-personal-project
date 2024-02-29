@@ -98,9 +98,9 @@ h1 {
   text-align: justify;
   font-size: 1.1rem;
 }
-.hoverable:hover{
-transition: box-shadow 1s;
-box-shadow: 0 0 10px 10px;
+.hoverable:hover {
+  transition: box-shadow 1s;
+  box-shadow: 0 0 10px 10px;
 }
 #synth > p {
   padding-right: 30px;
@@ -112,7 +112,6 @@ box-shadow: 0 0 10px 10px;
   float: right;
   margin-left: 20px;
 }
-
 
 #collage-container {
   margin-bottom: 60px;
@@ -132,9 +131,9 @@ box-shadow: 0 0 10px 10px;
 
 #collage-span {
   position: relative;
-  left: 80%;
+  left: 75%;
   top: 408px;
-  margin-right: 20px;
+  margin-right: 40px;
   padding: 0px;
 }
 
@@ -275,6 +274,7 @@ box-shadow: 0 0 10px 10px;
 
 .website-img {
   width: 85%;
+  box-shadow: 5px 5px 5px;
 }
 
 .web-section > p {
@@ -313,7 +313,11 @@ box-shadow: 0 0 10px 10px;
   font-size: 1.5rem;
   text-decoration: underline;
 }
-input:hover{
+input:hover {
   transition: box-shadow 1s;
   box-shadow: 10px 10px 10px;
-  }
+}
+
+input:focus{
+  background-color: rgb(208, 237, 181);
+}
