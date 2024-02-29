@@ -1,16 +1,36 @@
 #contactnav {
-    pointer-events: none;
-    cursor: default;
-    text-decoration: none;
-    color: black;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
 }
 
-
-
-
 #homenav {
-    pointer-events: auto;
-    cursor: pointer;
-    text-decoration: underline;
-    color: rgb(50, 24, 136);
+  pointer-events: auto;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(50, 24, 136);
+}
+
+@keyframes jostle {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 50px;
+  }
+
+  50% {
+    left: -50px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+h1 {
+  position: relative;
+  animation-name: jostle;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
 }

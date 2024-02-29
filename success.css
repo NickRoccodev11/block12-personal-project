@@ -22,10 +22,20 @@ body {
   animation-iteration-count: infinite;
 }
 
-#return-home{
-display:flex;
-justify-content: center;
-margin-top: 50px;
-font-size: 1.5rem;
+#return-home {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  font-size: 1.5rem;
 }
 
+#return-home > img {
+  width: 25%;
+  height: auto;
+  align-self: center;
+  border-radius: 50%
+}
+#return-home>a{
+    align-self: center;
+    margin-bottom: 5vw;
+}
